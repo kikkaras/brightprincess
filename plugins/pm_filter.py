@@ -407,7 +407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/+RUEFtYwKG84wMDg1')
+            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/shadow_linkz')
         ], [
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
@@ -438,7 +438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/+RUEFtYwKG84wMDg1'),
+            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/shadow_linkz'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -764,7 +764,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("Hey baby! Mujhe is naam se koi movie nhi mili, Mujhe lgta hai ki aapne spelling galat likh dii h 🤷‍♀️!\nCould'nt find anything🤷‍\nPlease check your spelling once again 🤦‍♀️... or \n Discuss your problem with our admin here 👉 @night_shadowz ")
+        k = await msg.reply("Hey Baby! Mujhe is naam se koi movie nhi mili, Mujhe lgta hai ki aapne spelling galat likh dii h 🤷‍♀️!\nCould'nt find anything🤷‍\nPlease check your spelling once again 🤦‍♀️... or \n Discuss your problem with our admin here 👉 @night_shadowz ")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -776,7 +776,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("Hey Sona! Mujhe is naam se koi movie nhi mili, Mujhe lgta hai ki aapne spelling galat likh dii h 🤷‍♀️!\nPlease check your spelling once again 🤦‍♀️... or \n Discuss your problem with our admin here 👉 @discussion_groupp ",
+    await msg.reply("Hey Baby! Mujhe is naam se koi movie nhi mili, Mujhe lgta hai ki aapne spelling galat likh dii h 🤷‍♀️!\nCould'nt find anything🤷‍\nPlease check your spelling once again 🤦‍♀️... or \n Discuss your problem with our admin here 👉 @night_shadowz ",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
